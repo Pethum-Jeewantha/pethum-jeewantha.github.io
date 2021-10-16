@@ -1,1 +1,13 @@
-{"version":3,"sources":["ts/main.ts"],"names":[],"mappings":"AAAA,CAAC,CAAC,MAAD,CAAD,CAAU,EAAV,CAAa,QAAb,EAAsB,YAAA;AAClB,MAAI,MAAM,GAAG,QAAQ,CAAC,aAAT,CAAuB,SAAvB,CAAb;AACA,EAAA,MAAM,CAAC,SAAP,CAAiB,MAAjB,CAAwB,QAAxB,EAAkC,MAAM,CAAC,OAAP,GAAiB,EAAE,CAAC,CAAC,MAAD,CAAD,CAAU,MAAV,KAAqB,CAAC,CAAC,SAAD,CAAD,CAAa,MAAb,EAAvB,CAAnD;AACH,CAHD","file":"main.0e24b174.js","sourceRoot":"..","sourcesContent":["$(window).on('scroll',()=>{\n    let navbar = document.querySelector(\".navbar\");\n    navbar.classList.toggle(\"sticky\", window.scrollY > +($(window).height() - $('.navbar').height()));\n});\n"]}
+{
+  "version": 3,
+  "sources": [
+    "ts/main.ts"
+  ],
+  "names": [],
+  "mappings": "AAAA,CAAC,CAAC,MAAD,CAAD,CAAU,EAAV,CAAa,QAAb,EAAsB,YAAA;AAClB,MAAI,MAAM,GAAG,QAAQ,CAAC,aAAT,CAAuB,SAAvB,CAAb;AACA,EAAA,MAAM,CAAC,SAAP,CAAiB,MAAjB,CAAwB,QAAxB,EAAkC,MAAM,CAAC,OAAP,GAAiB,EAAE,CAAC,CAAC,MAAD,CAAD,CAAU,MAAV,KAAqB,CAAC,CAAC,SAAD,CAAD,CAAa,MAAb,EAAvB,CAAnD;AACH,CAHD;AAKA,CAAC,CAAC,WAAD,CAAD,CAAe,EAAf,CAAkB,OAAlB,EAA0B,YAAA;AAAK,SAAA,CAAC,CAAC,iBAAD,CAAD,CAAqB,OAArB,CAA6B,OAA7B,CAAA;AAAqC,CAApE",
+  "file": "main.0e24b174.js",
+  "sourceRoot": "..",
+  "sourcesContent": [
+    "$(window).on('scroll',()=>{\n    let navbar = document.querySelector(\".navbar\");\n    navbar.classList.toggle(\"sticky\", window.scrollY > +($(window).height() - $('.navbar').height()));\n});\n\n$('.nav-link').on('click',()=> $('.navbar-toggler').trigger('click'));\n"
+  ]
+}
