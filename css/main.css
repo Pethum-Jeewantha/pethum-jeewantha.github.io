@@ -10,64 +10,6 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
-
-/* Parallax */
-.parallax {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 300px;
-}
-
-.parallax__group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.parallax__layer--base {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  z-index: 4;
-}
-
-.parallax__layer--back {
-  transform: translateZ(-300px) scale(2);
-  z-index: 3;
-  width: 100vw;
-}
-
-#group2 {
-  z-index: 5; /* slide under groups 1 and 3 */
-  background-color: white;
-}
-
-.main-image {
-  height: 100vh;
-  width: 100vw;
-}
-
-.title {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--home-font);
-  font-weight: 800;
-  letter-spacing: 8px;
-  position: relative;
-  animation: text 2.5s 1;
-  text-align: center;
-}
-
 /* Initial Window */
 
 .navbar * {
@@ -85,6 +27,23 @@
   color: var(--nav-hover) !important;
 }
 
+.main-image img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--home-font);
+  font-weight: 800;
+  letter-spacing: 8px;
+  position: absolute;
+  animation: text 2.5s 1;
+  text-align: center;
+}
+
 @keyframes text {
   0% {
     /* color: black; */
@@ -99,12 +58,14 @@
 /* About Section */
 
 #about {
-  padding-top: 60px;
+  padding-top: 65px !important;
+  transform: translateZ(1px);
+  background-color: white;
 }
 
 .about__name {
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 10px;
 }
 
 .about__short {
