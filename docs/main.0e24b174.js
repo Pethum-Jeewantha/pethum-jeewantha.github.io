@@ -126,6 +126,30 @@ window.addEventListener("scroll", function () {
   var navbar = document.querySelector(".navbar");
   navbar.classList.toggle("sticky", window.scrollY > 0);
 });
+$('.owl-carousel').owlCarousel({
+  margin: 20,
+  autoplay: true,
+  loop: true,
+  center: true,
+  autoWidth: true,
+  responsiveClass: true,
+  dots: false,
+  responsive: {
+    0: {
+      items: 3,
+      nav: true
+    },
+    600: {
+      items: 5,
+      nav: false
+    },
+    1000: {
+      items: 7,
+      nav: true,
+      loop: false
+    }
+  }
+});
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
