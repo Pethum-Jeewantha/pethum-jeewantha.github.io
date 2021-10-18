@@ -15,6 +15,7 @@ a {
   text-decoration: none;
 }
 
+
 /* Initial Window */
 
 .navbar * {
@@ -33,7 +34,7 @@ a {
 }
 
 .main-image img {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
 }
 
@@ -95,6 +96,15 @@ a {
   padding-top: 30px;
 }
 
+.parallax {
+  background-image: url('https://images.unsplash.com/photo-1431440869543-efaf3388c585?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80');
+  min-height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Works Section */
 
 .topic {
@@ -118,6 +128,10 @@ a {
   content: " ";
   display: block;
   border-bottom: 2px solid #ccc;
+}
+
+.portfolio-works__topic {
+  padding-top: 60px;
 }
 
 .portfolio-works__container {
@@ -234,3 +248,23 @@ a {
   position: relative;
 }
 
+#contact {
+  background-color: #95a5a6;
+  height: 100%;
+  font-size: 50px;
+  text-align: center;
+  word-spacing: 50px;
+  line-height: 100px;
+}
+
+.fa-linkedin {
+  color: #1d9bf0;
+}
+
+.fa-twitter {
+  color: rgb(29, 155, 240);
+}
+
+.fa-github {
+  color: grey;
+}
