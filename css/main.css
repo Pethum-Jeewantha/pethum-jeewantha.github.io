@@ -97,11 +97,12 @@ a {
 
 /* Works Section */
 
-.portfolio-works__topic {
+.topic {
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-.portfolio-works__topic h2 {
+.topic h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 26px;
@@ -113,7 +114,7 @@ a {
   grid-gap: 22px;
 }
 
-.portfolio-works__topic h2:after, .portfolio-works__topic h2:before {
+.topic h2:after, .topic h2:before {
   content: " ";
   display: block;
   border-bottom: 2px solid #ccc;

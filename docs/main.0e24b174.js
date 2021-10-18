@@ -131,7 +131,6 @@ $('.owl-carousel').owlCarousel({
   autoplay: true,
   loop: true,
   center: true,
-  autoWidth: true,
   responsiveClass: true,
   dots: false,
   responsive: {
@@ -145,8 +144,7 @@ $('.owl-carousel').owlCarousel({
     },
     1000: {
       items: 7,
-      nav: true,
-      loop: false
+      nav: true
     }
   }
 });
@@ -178,7 +176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40149" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46383" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

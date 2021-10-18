@@ -12,7 +12,6 @@ $('.owl-carousel').owlCarousel({
   autoplay: true,
   loop: true,
   center: true,
-  autoWidth: true,
   responsiveClass: true,
   dots: false,
   responsive: {
@@ -27,7 +26,6 @@ $('.owl-carousel').owlCarousel({
     1000: {
       items: 7,
       nav: true,
-      loop: false
     }
   }
 });
