@@ -34,7 +34,7 @@ a {
 }
 
 .main-image img {
-  width: 99vw;
+  width: 99.2vw;
   height: 100vh;
 }
 
@@ -43,11 +43,18 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
   color: var(--home-font);
+  position: absolute;
+  text-align: center;
+}
+
+.title h1 {
+  animation: text 2.5s 1;
   font-weight: 800;
   letter-spacing: 8px;
-  position: absolute;
-  animation: text 2.5s 1;
-  text-align: center;
+}
+
+.title h2 {
+  padding-top: 100px;
 }
 
 @keyframes text {
@@ -161,12 +168,12 @@ a {
 }
 
 .flip-container:hover .flipper {
-  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   cursor: pointer;
 }
 
 .flip-container.hover .flipper {
-  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   cursor: pointer;
 }
 
@@ -251,9 +258,11 @@ a {
 #contact {
   background-color: #95a5a6;
   height: 100%;
-  font-size: 50px;
+  position: relative;
+  top: 20px;
+  font-size: 30px;
   text-align: center;
-  word-spacing: 50px;
+  word-spacing: 30px;
   line-height: 100px;
 }
 
@@ -267,4 +276,11 @@ a {
 
 .fa-github {
   color: grey;
+}
+
+.contact-me {
+  font-size: 15px;
+  word-spacing: normal;
+  line-height: normal;
+  padding-bottom: 20px;
 }
