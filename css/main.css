@@ -143,116 +143,63 @@ a {
 
 .portfolio-works__container {
   display: flex;
-  column-gap: 20px;
+  justify-content: space-between;
+  column-gap: 10px;
+  flex-wrap: wrap;
 }
 
-.our-services {
-  margin-top: 50px;
+@media all and (max-width: 550px) {
+  .portfolio-works__container {
+    justify-content: center;
+  }
 }
 
-.our-services__card {
-  width: 280px;
-}
-
-.card__image {
-  width: 100px;
-  padding: 20px 0;
-}
-
-.flip-container {
-  margin: 0 auto 60px auto;
-  width: 280px;
+.card {
+  width: 250px;
   height: 250px;
-  border-radius: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: .4s;
+}
+
+.card:hover {
   cursor: pointer;
+  transform: scale(.9, .9);
 }
 
-.flip-container:hover .flipper {
-  transform: rotateY(180deg);
-  cursor: pointer;
+.card-img {
+  border-radius: 10px;
 }
 
-.flip-container.hover .flipper {
-  transform: rotateY(180deg);
-  cursor: pointer;
-}
-
-/*.google-card{
-
-}
-
-.google-card-back{
-
-}
-
-.twitter-card{
-  background-image: linear-gradient(to right top, #0016ff, #0041ff, #005afa, #206ef2, #4980e6, #5782d9, #6384cd, #6d86c0, #687bb2, #6270a4, #5c6596, #565b89);
-}
-
-.pos-card{
-
-}*/
-
-.front {
-  width: 280px;
+.google-img {
+  width: 250px;
   height: 250px;
-  border-radius: 15px;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background-color: lightblue;
-  box-shadow: 0 0 8px -1px rgba(122, 122, 122, 0.5);
+  object-fit: cover;
 }
 
-.front h3 {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 25px;
-  color: white;
-  font-weight: 600;
-  text-shadow: 2px 2px #95a5a6;
+.twitter-card {
+  background-color: #00aced;
 }
 
-.front img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-}
-
-.back {
-  width: 280px;
+.twitter-img {
+  width: 240px;
   height: 250px;
-  border-radius: 15px;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotateY(180deg);
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  background-color: #9BB7D4;
+  object-fit: contain;
 }
 
-.back h3 {
-  margin-top: 20px;
-  text-shadow: 2px 2px #95a5a6;
+.pos-img {
+  width: 150px;
+  height: 150px;
+  margin: 50px 0 0 50px;
 }
 
-.back p {
-  font-size: 14px;
-  margin-right: 15px;
-  margin-top: 25%;
-  font-weight: 600;
+.pro-edit-card {
+  background-color: #7671de;
 }
 
-.flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
+.pro-edit-img {
+  object-fit: contain;
+  margin-top: 30px;
 }
 
 #contact {
