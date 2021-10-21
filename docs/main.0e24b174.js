@@ -129,6 +129,7 @@ window.addEventListener("scroll", function () {
 $('.owl-carousel').owlCarousel({
   margin: 20,
   autoplay: true,
+  autoplayTimeout: 2500,
   loop: true,
   center: true,
   responsiveClass: true,
@@ -176,7 +177,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46417" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44051" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -313,25 +313,16 @@ a {
 
 #contact {
   background-color: #95a5a6;
-  height: 100%;
   position: relative;
   top: 20px;
-  font-size: 30px;
+  font-size: 15px;
   text-align: center;
   word-spacing: 30px;
   line-height: 100px;
 }
 
-.fa-linkedin {
-  color: #1d9bf0;
-}
-
-.fa-twitter {
-  color: rgb(29, 155, 240);
-}
-
-.fa-github {
-  color: grey;
+.contact-circle img {
+  width: 40px;
 }
 
 .contact-me {
