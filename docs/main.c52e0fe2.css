@@ -15,7 +15,6 @@ a {
   text-decoration: none;
 }
 
-
 /* Initial Window */
 
 .navbar * {
@@ -323,6 +322,10 @@ a {
 
 .contact-circle img {
   width: 40px;
+}
+
+.contact-circle img:hover {
+  opacity: .5;
 }
 
 .contact-me {
