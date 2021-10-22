@@ -117,53 +117,79 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"ts/main.ts":[function(require,module,exports) {
-$('.nav-link').on('click', function () {
-  return $('.navbar-toggler').trigger('click');
-});
-var rellax = new Rellax('.rellax');
-window.addEventListener("scroll", function () {
-  var navbar = document.querySelector(".navbar");
-  navbar.classList.toggle("sticky", window.scrollY > window.innerHeight / 4);
-});
-$('.owl-carousel').owlCarousel({
-  margin: 20,
-  autoplay: true,
-  autoplayTimeout: 2500,
-  loop: true,
-  center: true,
-  responsiveClass: true,
-  dots: false,
-  responsive: {
-    0: {
-      items: 3,
-      nav: true
-    },
-    600: {
-      items: 5,
-      nav: false
-    },
-    1000: {
-      items: 7,
-      nav: true
+})({"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
     }
   }
-});
-var boxes = document.querySelectorAll(".box");
-window.addEventListener("scroll", checkBoxes);
-checkBoxes();
 
-function checkBoxes() {
-  var triggerBottom = window.innerHeight / 6 * 5.5;
-  boxes.forEach(function (box) {
-    var boxTop = box.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      box.classList.add("show");
-    }
-  });
+  return '/';
 }
-},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/scroll-animation.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -367,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","ts/main.ts"], null)
-//# sourceMappingURL=/main.0e24b174.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/scroll-animation.5e212e11.js.map

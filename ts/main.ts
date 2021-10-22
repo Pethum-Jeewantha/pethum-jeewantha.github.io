@@ -4,7 +4,7 @@ let rellax = new Rellax('.rellax');
 
 window.addEventListener("scroll", function () {
   let navbar = document.querySelector(".navbar");
-  navbar.classList.toggle("sticky", window.scrollY > 0);
+  navbar.classList.toggle("sticky", window.scrollY > window.innerHeight / 4);
 });
 
 $('.owl-carousel').owlCarousel({
@@ -30,3 +30,22 @@ $('.owl-carousel').owlCarousel({
     }
   }
 });
+
+const boxes = document.querySelectorAll(".box");
+
+window.addEventListener("scroll", checkBoxes);
+
+checkBoxes();
+
+function checkBoxes() {
+  const triggerBottom = (window.innerHeight / 6) * 5.5;
+
+  boxes.forEach((box) => {
+    const boxTop = box.getBoundingClientRect().top;
+
+    if ((boxTop) < triggerBottom) {
+      box.classList.add("show");
+    }
+  });
+}
+

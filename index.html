@@ -42,6 +42,8 @@
         referrerpolicy="no-referrer" rel="stylesheet"/>
 
   <link href="css/main.css" rel="stylesheet"/>
+  <link href="css/elevator-pitch.css" rel="stylesheet">
+  <link href="css/scroll-animation.css" rel="stylesheet">
 
   <meta content="#fafafa" name="theme-color"/>
 </head>
@@ -108,34 +110,40 @@
 </div>
 <article class="container-fluid" id="about">
   <div class="container-xl">
-    <h2 class="about__name text-center">Mr. Pethum Jeewantha</h2>
-    <h3 class="about__short text-center">
-      Full-Stack Developer
-    </h3>
-    <section class="description about__description row">
-      <img
-        alt="pethum-jeewantha-image"
-        class="description__image col-lg-4"
-        src="https://expertphotography.com/wp-content/uploads/2017/05/portrait-photography-1.jpg"
-      />
-      <p class="description__para col-lg-8">
-        Hi, I am Pethum Jeewantha & full-stack software developer in Galle, Sri Lanka with a passion for computer
-        science. I'm love to explore anything related to new technologies.
-        <br>
-        I studied at G&nbsp;/&nbsp;Tawalama Vidyaraja National School & St.&nbsp;Aloysius' College. I participated to
-        Advanced Level Exam in physical science stream in 2021 & I got 3 B Passes.
-      </p>
-    </section>
+    <div class="box scale">
+      <h2 class="about__name text-center">Mr. Pethum Jeewantha</h2>
+      <h3 class="about__short text-center">
+        Full-Stack Developer
+      </h3></div>
+    <div class="box opacity">
+      <section class="description about__description row">
+        <img
+          alt="pethum-jeewantha-image"
+          class="description__image col-lg-4"
+          src="https://expertphotography.com/wp-content/uploads/2017/05/portrait-photography-1.jpg"
+        />
+        <p class="description__para col-lg-8">
+          Hi, I am Pethum Jeewantha & full-stack software developer in Galle, Sri Lanka with a passion for computer
+          science. I'm love to explore anything related to new technologies.
+          <br>
+          I studied at G&nbsp;/&nbsp;Tawalama Vidyaraja National School & St.&nbsp;Aloysius' College. I participated to
+          Advanced Level Exam in physical science stream in 2021 & I got 3 B Passes.
+        </p>
+      </section>
+    </div>
   </div>
 </article>
 <article id="portfolio">
   <div class="container-xl">
     <section class="portfolio__works">
-      <div class="topic portfolio-works__topic">
-        <h2>Works</h2>
+      <div class="box opacity">
+        <div class="topic portfolio-works__topic">
+          <h2>Works</h2>
+        </div>
       </div>
       <div class="container portfolio-works__container">
-        <a href="https://pethum-jeewantha.github.io/vanilla-html-css-google-clone" target="_blank">
+        <div class="box scale"><a href="https://pethum-jeewantha.github.io/vanilla-html-css-google-clone"
+                                  target="_blank">
           <div class="card bg-body text-white">
             <img alt="google-logo" class="card-img google-img" src="https://cdn.wallpapersafari.com/7/87/ICqNzy.jpg">
             <div class="card-img-overlay">
@@ -143,173 +151,194 @@
               <p class="card-text">Google Clone with Search Engine (CSE)</p>
             </div>
           </div>
-        </a>
-        <a href="https://pethum-jeewantha.github.io/vanilla-html-css-twitter-clone" target="_blank">
-          <div class="card text-black twitter-card">
-            <img alt="twitter-logo" class="card-img twitter-img" src="https://wallpaperaccess.com/full/1459043.jpg">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Twitter Clone</h5>
-              <p class="card-text">Twitter News Feed Clone</p>
+        </a></div>
+        <div class="box scale">
+          <a href="https://pethum-jeewantha.github.io/vanilla-html-css-twitter-clone" target="_blank">
+            <div class="card text-black twitter-card">
+              <img alt="twitter-logo" class="card-img twitter-img" src="https://wallpaperaccess.com/full/1459043.jpg">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Twitter Clone</h5>
+                <p class="card-text">Twitter News Feed Clone</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="https://pethum-jeewantha.github.io/html-css-pos-system" target="_blank">
-          <div class="card bg-body text-black">
-            <img alt="pos-ui" class="card-img pos-img"
-                 src="https://raw.githubusercontent.com/Pethum-Jeewantha/html-css-pos-system/master/favicon.ico">
-            <div class="card-img-overlay">
-              <h5 class="card-title">POS UI</h5>
-              <p class="card-text">Simple POS UI with using AdminLTE</p>
+          </a>
+        </div>
+        <div class="box scale">
+          <a href="https://pethum-jeewantha.github.io/html-css-pos-system" target="_blank">
+            <div class="card bg-body text-black">
+              <img alt="pos-ui" class="card-img pos-img"
+                   src="https://raw.githubusercontent.com/Pethum-Jeewantha/html-css-pos-system/master/favicon.ico">
+              <div class="card-img-overlay">
+                <h5 class="card-title">POS UI</h5>
+                <p class="card-text">Simple POS UI with using AdminLTE</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="https://pethum-jeewantha.github.io/simple-intro" target="_blank">
-          <div class="card bg-secondary text-white bg-gradient">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Intro</h5>
-              <p class="card-text">Simple Intro Animated by JS</p>
+          </a>
+        </div>
+        <div class="box scale">
+          <a href="https://pethum-jeewantha.github.io/simple-intro" target="_blank">
+            <div class="card bg-secondary text-white bg-gradient">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Intro</h5>
+                <p class="card-text">Simple Intro Animated by JS</p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="https://github.com/Pethum-Jeewantha/Text-Editor.git" target="_blank">
-          <div class="card text-black pro-edit-card">
-            <img alt="pro-edit" class="card-img pro-edit-img"
-                 src="https://github.com/Pethum-Jeewantha/Text-Editor/blob/master/src/assets/aboutImage.png?raw=true">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Pro Edit</h5>
-              <p class="card-text">Simple Text Editor Developed by Java</p>
+          </a>
+        </div>
+        <div class="box scale">
+          <a href="https://github.com/Pethum-Jeewantha/Text-Editor.git" target="_blank">
+            <div class="card text-black pro-edit-card">
+              <img alt="pro-edit" class="card-img pro-edit-img"
+                   src="https://github.com/Pethum-Jeewantha/Text-Editor/blob/master/src/assets/aboutImage.png?raw=true">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Pro Edit</h5>
+                <p class="card-text">Simple Text Editor Developed by Java</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </section>
   </div>
   <div class="parallax"></div>
   <div class="container-xl">
-    <div class="topic">
-      <h2>TECHNOLOGIES & TOOLS</h2>
-    </div>
-    <section class="portfolio__technologies">
-      <div class="owl-carousel">
-        <img alt="java" id="java" src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg">
-        <img alt="tomcat" src="https://www.vectorlogo.zone/logos/apache_tomcat/apache_tomcat-ar21.svg">
-        <img alt="javascript"
-             src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg"
-             style="height: 60px; margin: 0">
-        <img alt="typescript" src="https://cdn.worldvectorlogo.com/logos/typescript.svg" style="width: 60px">
-        <img alt="nodejs" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg">
-        <img alt="angular" src="https://www.vectorlogo.zone/logos/angular/angular-ar21.svg">
-        <img alt="react" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg">
-        <img alt="firebase" src="https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg">
-        <img alt="html5" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg">
-        <img alt="css3" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg">
-        <img alt="figma" src="https://www.vectorlogo.zone/logos/figma/figma-ar21.svg">
-        <img alt="sass" src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg">
-        <img alt="webpack" src="https://www.vectorlogo.zone/logos/js_webpack/js_webpack-ar21.svg">
-        <img alt="parceljs" src="https://www.vectorlogo.zone/logos/parceljs/parceljs-ar21.svg">
-        <img alt="jetbrains" src="https://www.vectorlogo.zone/logos/jetbrains/jetbrains-ar21.svg">
-        <img alt="vs-code" src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg">
-        <img alt="mysql" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg">
-        <img alt="oracle" src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg">
-        <img alt="redis" src="https://www.vectorlogo.zone/logos/redis/redis-ar21.svg">
-        <img alt="mongodb" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg">
-        <img alt="docker" src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg">
-        <img alt="kubernetes" src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg">
-        <img alt="aws" src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg">
-        <img alt="git" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg">
-      </div>
-    </section>
-    <section class="portfolio__certifications"></section>
-    <div class="topic">
-      <h2>CERTIFICATIONS</h2>
-    </div>
-    <div data-iframe-height="270" data-iframe-width="150" data-share-badge-host="https://www.credly.com"
-         data-share-badge-id="ed8c95c7-841a-4697-8cf1-dfe6217ea1f9"></div>
-    <section class="portfolio__education">
+    <div class="box opacity-scale">
       <div class="topic">
-        <h2>EDUCATION</h2>
+        <h2>TECHNOLOGIES & TOOLS</h2>
+      </div>
+      <section class="portfolio__technologies">
+        <div class="owl-carousel">
+          <img alt="java" id="java" src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg">
+          <img alt="tomcat" src="https://www.vectorlogo.zone/logos/apache_tomcat/apache_tomcat-ar21.svg">
+          <img alt="javascript"
+               src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg"
+               style="height: 60px; margin: 0">
+          <img alt="typescript" src="https://cdn.worldvectorlogo.com/logos/typescript.svg" style="width: 60px">
+          <img alt="nodejs" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg">
+          <img alt="angular" src="https://www.vectorlogo.zone/logos/angular/angular-ar21.svg">
+          <img alt="react" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg">
+          <img alt="firebase" src="https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg">
+          <img alt="html5" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg">
+          <img alt="css3" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg">
+          <img alt="figma" src="https://www.vectorlogo.zone/logos/figma/figma-ar21.svg">
+          <img alt="sass" src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg">
+          <img alt="webpack" src="https://www.vectorlogo.zone/logos/js_webpack/js_webpack-ar21.svg">
+          <img alt="parceljs" src="https://www.vectorlogo.zone/logos/parceljs/parceljs-ar21.svg">
+          <img alt="jetbrains" src="https://www.vectorlogo.zone/logos/jetbrains/jetbrains-ar21.svg">
+          <img alt="vs-code" src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg">
+          <img alt="mysql" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg">
+          <img alt="oracle" src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg">
+          <img alt="redis" src="https://www.vectorlogo.zone/logos/redis/redis-ar21.svg">
+          <img alt="mongodb" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg">
+          <img alt="docker" src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg">
+          <img alt="kubernetes" src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg">
+          <img alt="aws" src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg">
+          <img alt="git" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg">
+        </div>
+      </section>
+    </div>
+    <section class="portfolio__certifications"></section>
+    <div class="box opacity">
+      <div class="topic">
+        <h2>CERTIFICATIONS</h2>
+      </div>
+    </div>
+    <div class="box scale">
+      <div data-iframe-height="270" data-iframe-width="150" data-share-badge-host="https://www.credly.com"
+           data-share-badge-id="ed8c95c7-841a-4697-8cf1-dfe6217ea1f9"></div>
+    </div>
+    <section class="portfolio__education">
+      <div class="box opacity-scale">
+        <div class="topic">
+          <h2>EDUCATION</h2>
+        </div>
       </div>
       <div class="d-flex justify-content-center">
         <div class="list-group col-8">
-          <div class="list-group-item">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">G. C. E. Advanced Level</h5>
-              <small>2020</small>
+          <div class="box opacity">
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">G. C. E. Advanced Level</h5>
+                <small>2020</small>
+              </div>
+              <p class="mb-1">Physical Science Stream</p>
+              <small>
+                <table class="table-borderless">
+                  <tbody>
+                  <tr>
+                    <td>Combined Maths</td>
+                    <td>&nbsp;&nbsp;-&nbsp;B</td>
+                  </tr>
+                  <tr>
+                    <td>Physics</td>
+                    <td>&nbsp;&nbsp;-&nbsp;B</td>
+                  </tr>
+                  <tr>
+                    <td>Chemistry</td>
+                    <td>&nbsp;&nbsp;-&nbsp;B</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </small>
             </div>
-            <p class="mb-1">Physical Science Stream</p>
-            <small>
-              <table class="table-borderless">
-                <tbody>
-                <tr>
-                  <td>Combined Maths</td>
-                  <td>&nbsp;&nbsp;-&nbsp;B</td>
-                </tr>
-                <tr>
-                  <td>Physics</td>
-                  <td>&nbsp;&nbsp;-&nbsp;B</td>
-                </tr>
-                <tr>
-                  <td>Chemistry</td>
-                  <td>&nbsp;&nbsp;-&nbsp;B</td>
-                </tr>
-                </tbody>
-              </table>
-            </small>
           </div>
-          <div class="list-group-item">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">G. C. E. Ordinary Level</h5>
-              <small>2016</small>
+          <div class="box opacity">
+            <div class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">G. C. E. Ordinary Level</h5>
+                <small>2016</small>
+              </div>
+              <p class="mb-1">Sinhala Medium</p>
+              <small>
+                <table class="table-borderless">
+                  <tbody>
+                  <tr>
+                    <td>Maths</td>
+                    <td>&nbsp;&nbsp;-&nbsp;A</td>
+                  </tr>
+                  <tr>
+                    <td>Science</td>
+                    <td>&nbsp;&nbsp;-&nbsp;A</td>
+                  </tr>
+                  <tr>
+                    <td>English</td>
+                    <td>&nbsp;&nbsp;-&nbsp;B</td>
+                  </tr>
+                  <tr>
+                    <td>I.C.T</td>
+                    <td>&nbsp;&nbsp;-&nbsp;A</td>
+                  </tr>
+                  <tr>
+                    <td>Commerce</td>
+                    <td>&nbsp;&nbsp;-&nbsp;A</td>
+                  </tr>
+                  <tr>
+                    <td>Sinhala</td>
+                    <td>&nbsp;&nbsp;-&nbsp;A</td>
+                  </tr>
+                  <tr>
+                    <td>Sinhala Literature</td>
+                    <td>&nbsp;&nbsp;-&nbsp;A</td>
+                  </tr>
+                  <tr>
+                    <td>History</td>
+                    <td>&nbsp;&nbsp;-&nbsp;A</td>
+                  </tr>
+                  <tr>
+                    <td>Buddhism</td>
+                    <td>&nbsp;&nbsp;-&nbsp;A</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </small>
             </div>
-            <p class="mb-1">Sinhala Medium</p>
-            <small>
-              <table class="table-borderless">
-                <tbody>
-                <tr>
-                  <td>Maths</td>
-                  <td>&nbsp;&nbsp;-&nbsp;A</td>
-                </tr>
-                <tr>
-                  <td>Science</td>
-                  <td>&nbsp;&nbsp;-&nbsp;A</td>
-                </tr>
-                <tr>
-                  <td>English</td>
-                  <td>&nbsp;&nbsp;-&nbsp;B</td>
-                </tr>
-                <tr>
-                  <td>I.C.T</td>
-                  <td>&nbsp;&nbsp;-&nbsp;A</td>
-                </tr>
-                <tr>
-                  <td>Commerce</td>
-                  <td>&nbsp;&nbsp;-&nbsp;A</td>
-                </tr>
-                <tr>
-                  <td>Sinhala</td>
-                  <td>&nbsp;&nbsp;-&nbsp;A</td>
-                </tr>
-                <tr>
-                  <td>Sinhala Literature</td>
-                  <td>&nbsp;&nbsp;-&nbsp;A</td>
-                </tr>
-                <tr>
-                  <td>History</td>
-                  <td>&nbsp;&nbsp;-&nbsp;A</td>
-                </tr>
-                <tr>
-                  <td>Buddhism</td>
-                  <td>&nbsp;&nbsp;-&nbsp;A</td>
-                </tr>
-                </tbody>
-              </table>
-            </small>
           </div>
         </div>
       </div>
     </section>
   </div>
 </article>
+
 <footer id="contact">
   <a class="contact-circle" href="https://www.linkedin.com/in/pethum-jeewantha-7b70aa1b1" target="_blank"><img
     alt="linkedin-img"
