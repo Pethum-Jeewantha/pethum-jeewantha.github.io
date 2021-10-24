@@ -17,6 +17,7 @@
 }
 
 .box.opacity-scale {
+  opacity: 0;
   transition: 1.5s;
   transform: scale(0);
 }
