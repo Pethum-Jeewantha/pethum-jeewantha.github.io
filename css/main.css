@@ -176,26 +176,17 @@ a {
 }
 
 #contact {
-  background-color: #95a5a6;
-  position: relative;
-  top: 20px;
-  font-size: 15px;
-  text-align: center;
-  word-spacing: 30px;
-  line-height: 100px;
+  background-color: #efefef;
 }
 
-.contact-circle img {
-  width: 40px;
+#linkedin {
+  color: #0e76a8;
 }
 
-.contact-circle img:hover {
-  opacity: .5;
+#mail {
+  color: grey;
 }
 
-.contact-me {
-  font-size: 15px;
-  word-spacing: normal;
-  line-height: normal;
-  padding-bottom: 20px;
+#twitter {
+  color: #00acee;
 }
