@@ -190,3 +190,9 @@ a {
 #twitter {
   color: #00acee;
 }
+
+@media all and (max-width: 553px) {
+  footer {
+    justify-content: center;
+  }
+}
