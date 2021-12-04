@@ -4,7 +4,7 @@ let rellax = new Rellax('.rellax');
 
 window.addEventListener("scroll", function () {
   let navbar = document.querySelector(".navbar");
-  navbar.classList.toggle("sticky", window.scrollY > window.innerHeight / 4);
+  navbar.classList.toggle("sticky", window.scrollY > (window.innerHeight / 5) * 4);
 });
 
 $('.owl-carousel').owlCarousel({

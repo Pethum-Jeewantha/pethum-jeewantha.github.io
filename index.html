@@ -17,7 +17,7 @@
   <link href="humans.txt" rel="author"/>
   <link href="site.webmanifest" rel="manifest"/>
   <link href="icon.png" rel="apple-touch-icon"/>
-  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="favicon.ico" rel="shortcut icon" style="height: 300px; width: 300px" type="image/x-icon"/>
 
   <link
     crossorigin="anonymous"
@@ -39,8 +39,9 @@
   <link href="css/main.css" rel="stylesheet"/>
   <link href="css/elevator-pitch.css" rel="stylesheet">
   <link href="css/scroll-animation.css" rel="stylesheet">
+  <link href="css/background.css" rel="stylesheet">
 
-  <meta content="#fafafa" name="theme-color"/>
+  <meta content="#073352" name="theme-color"/>
 </head>
 <body>
 <nav
@@ -52,6 +53,7 @@
       "
 >
   <div class="container-xxl">
+    <a class="navbar-brand" href="https://pethumjeewantha.com"><img alt="logo" src="icon.png"></a>
     <button
       aria-controls="navbarNav"
       aria-expanded="false"
@@ -87,6 +89,28 @@
     </div>
   </div>
 </nav>
+<div class="night">
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+  <div class="shooting_star"></div>
+</div>
 <div class="main-image rellax" data-rellax-speed="-6" id="home">
   <img alt="main-image" src="assets/cover.jpg">
 </div>
@@ -100,13 +124,13 @@
     <span>Full</span>
     <span>Stack</span>
     <span>Developer</span>
-    <span>who</span>
-    <span>like</span>
-    <span>to</span>
-    <span>learn</span>
-    <span>more</span>
-    <span>than</span>
-    <span>yesterday</span>
+    <span>Who</span>
+    <span>Like</span>
+    <span>To</span>
+    <span>Learn</span>
+    <span>More</span>
+    <span>Than</span>
+    <span>Yesterday</span>
   </h1>
 </div>
 <article class="container-fluid" id="about">
@@ -203,10 +227,20 @@
             </div>
           </a>
         </div>
+        <div class="box scale">
+          <a href="https://github.com/Pethum-Jeewantha/simple-orm-framework.git" target="_blank">
+            <div class="card bg-dark text-white bg-gradient">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-center">Simple ORM Framework</h5>
+                <p class="card-text text-center">This can create table in the Database just only annotating a class &
+                  without any queries.</p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   </div>
-  <div class="parallax"></div>
   <div class="container-xl">
     <div class="box opacity-scale">
       <div class="topic">
@@ -215,6 +249,7 @@
       <section class="portfolio__technologies">
         <div class="owl-carousel">
           <img alt="java" id="java" src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg">
+          <img alt="spring-framework" src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg">
           <img alt="tomcat" src="https://www.vectorlogo.zone/logos/apache_tomcat/apache_tomcat-ar21.svg">
           <img alt="javascript"
                src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg"
@@ -250,8 +285,8 @@
       </div>
     </div>
     <div class="box scale">
-      <div data-iframe-height="270" data-iframe-width="150" data-share-badge-host="https://www.credly.com"
-           data-share-badge-id="ed8c95c7-841a-4697-8cf1-dfe6217ea1f9"></div>
+      <a href="https://www.credly.com/badges/ed8c95c7-841a-4697-8cf1-dfe6217ea1f9/public_url" target="_blank"><img
+        alt="aws-saa" src="assets/aws-certified-solutions-architect-associate.png"></a>
     </div>
     <section class="portfolio__education">
       <div class="box opacity-scale">
@@ -271,16 +306,8 @@
               <table class="table-borderless al-table">
                 <tbody>
                 <tr>
-                  <td>Combined Maths</td>
-                  <td>&nbsp;&nbsp;-&nbsp;B</td>
-                </tr>
-                <tr>
-                  <td>Physics</td>
-                  <td>&nbsp;&nbsp;-&nbsp;B</td>
-                </tr>
-                <tr>
-                  <td>Chemistry</td>
-                  <td>&nbsp;&nbsp;-&nbsp;B</td>
+                  <td>Z - Index</td>
+                  <td>&nbsp;&nbsp;-&nbsp;1.6590</td>
                 </tr>
                 </tbody>
               </table>
@@ -293,11 +320,11 @@
 </article>
 
 <div class="container-fluid" id="contact">
-  <footer class="d-flex flex-wrap justify-content-sm-between align-items-center py-3 px-5 mt-4">
+  <footer class="d-flex flex-wrap justify-content-md-between align-items-center py-3 px-5 mt-4">
     <div class="col-md-4 d-flex align-items-center">
-      <!--<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-      </a>-->
+      <a class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" href="https://pethumjeewantha.com">
+        <img alt="logo" class="footer-img d-flex align-items-center justify-content-center" src="icon.png">
+      </a>
       <span class="text-muted">&copy; 2021 - present Pethum Jeewantha</span>
     </div>
 
@@ -312,7 +339,6 @@
   </footer>
 </div>
 
-<script async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 <script crossorigin="anonymous"
         integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
         referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>

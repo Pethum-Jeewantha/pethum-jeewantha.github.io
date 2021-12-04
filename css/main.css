@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap);
 
 :root {
-  --nav-hover: #95a5a6;
+  --nav-hover: #0d598f;
   --home-font: white;
-  --nav-sticky: black;
-  --card-background: #efefef;
+  --nav-sticky: #081522;
+  --card-background: #082942;
 }
 
 * {
@@ -27,13 +27,23 @@ a {
   opacity: 0.8;
 }
 
+.navbar .navbar-brand img {
+  width: 100px;
+  visibility: hidden;
+}
+
+.navbar.sticky .navbar-brand img {
+  width: 100px;
+  visibility: visible;
+}
+
 .navbar-brand:hover,
 .nav-item a:hover {
   color: var(--nav-hover) !important;
 }
 
 .main-image img {
-  width: 99.2vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -42,21 +52,24 @@ a {
 #about {
   padding-top: 65px !important;
   transform: translateZ(1px);
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .about__name {
   font-weight: 700;
   letter-spacing: 10px;
+  color: white;
 }
 
 .about__short {
   font-weight: 500;
   letter-spacing: 1px;
   padding-bottom: 10px;
+  color: white;
 }
 
 .description {
+  color: white;
   padding: 10px;
   line-height: 25px;
   letter-spacing: 1px;
@@ -66,19 +79,13 @@ a {
 }
 
 .description__image {
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .description__para {
   padding-top: 30px;
-}
-
-.parallax {
-  background-image: url('https://images.unsplash.com/photo-1431440869543-efaf3388c585?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80');
-  min-height: 250px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* Works Section */
@@ -86,6 +93,7 @@ a {
 .topic {
   margin-top: 40px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .topic h2 {
@@ -112,15 +120,13 @@ a {
 
 .portfolio-works__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   column-gap: 10px;
   flex-wrap: wrap;
 }
 
-@media all and (max-width: 550px) {
-  .portfolio-works__container {
-    justify-content: center;
-  }
+.box {
+  margin-right: 50px;
 }
 
 .card {
@@ -175,8 +181,18 @@ a {
   font-size: 15px;
 }
 
+.list-group-item {
+  background-color: transparent;
+  color: white;
+}
+
 #contact {
-  background-color: #efefef;
+  background-color: transparent;
+  /*background-color: #efefef;*/
+}
+
+.footer-img {
+  width: 80px;
 }
 
 #linkedin {
@@ -191,8 +207,8 @@ a {
   color: #00acee;
 }
 
-@media all and (max-width: 553px) {
+@media all and (max-width: 641px) {
   footer {
-    justify-content: center;
+    justify-content: center !important;
   }
 }
