@@ -80,9 +80,6 @@
           <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Pethum-Jeewantha" target="_blank">Github</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
@@ -116,8 +113,9 @@
 </div>
 <div class="elevator-pitch">
   <h1>
-    <span><strong>Welcome</strong></span>
-    <br>
+    <span id="text"></span>
+    <!--    <span class="text_1"><strong>Welcome</strong></span>-->
+    <!--<br>
     <br>
     <span>I'm</span>
     <span>a</span>
@@ -130,7 +128,8 @@
     <span>Learn</span>
     <span>More</span>
     <span>Than</span>
-    <span>Yesterday</span>
+    <span>Yesterday</span>-->
+    <!--    <span class="text_2">I'm a Full Stack Developer Who Like To Learn More Than Yesterday</span>-->
   </h1>
 </div>
 <article class="container-fluid" id="about">
@@ -147,17 +146,30 @@
           class="description__image col-lg-4"
           src="assets/profile.jpeg"
         />
-        <p class="description__para col-lg-8">
-          Hi, I am Pethum Jeewantha & a full-stack software developer in Galle, Sri Lanka with a passion for computer
-          science. Also love to explore anything related to new technologies. I like to find
-          news about the new technologies in my free time.
-          <br>
-          <br>
-          I studied at G&nbsp;/&nbsp;Tawalama Vidyaraja National School & St.&nbsp;Aloysius' College in Galle. And also
-          I studied in physical science stream in Aloysius college.
-          <br>
-          <br>
-        </p>
+        <div class="col-lg-8 d-flex flex-column justify-content-around align-items-center">
+          <p class="description__para">
+            Hi, I am Pethum Jeewantha & a full-stack software developer in Galle, Sri Lanka with a passion for computer
+            science. Also love to explore anything related to new technologies. I like to find
+            news about the new technologies in my free time.
+            <br>
+            <br>
+            I studied at G&nbsp;/&nbsp;Tawalama Vidyaraja National School & St.&nbsp;Aloysius' College in Galle. And
+            also
+            I studied in physical science stream in Aloysius college.
+            <br>
+            <br>
+          </p>
+          <div class="d-flex flex-wrap justify-content-around align-items-center w-100">
+            <a class="btn btn-primary btn-cv" href="assets/pethum-jeewantha.pdf" role="button" target="_blank"><i
+              class="fas fa-download"></i> CV</a>
+            <div class="icons__logos p-3">
+              <a href="https://github.com/Pethum-Jeewantha" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/pethum-jeewantha-7b70aa1b1" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+              <a href="mailto:pethumjeewantha4@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </div>
@@ -247,8 +259,13 @@
       </div>
       <section class="portfolio__technologies">
         <div class="owl-carousel">
-          <img alt="java" id="java" src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg">
+          <img alt="java" id="java" src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg"
+               style="margin-top: 10px">
           <img alt="spring-framework" src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg">
+          <img alt="spring-boot" src="https://www.dariawan.com/media/images/tech-spring-boot.width-1024.png"
+               style="margin-top: 15px">
+          <img alt="spring-jpa" src="https://huongdanjava.com/wp-content/uploads/2018/01/spring-data.png"
+               style="height: 60px; object-fit: contain; margin-top: 10px">
           <img alt="tomcat" src="https://www.vectorlogo.zone/logos/apache_tomcat/apache_tomcat-ar21.svg">
           <img alt="javascript"
                src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg"
@@ -257,17 +274,19 @@
           <img alt="nodejs" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg">
           <img alt="angular" src="https://www.vectorlogo.zone/logos/angular/angular-ar21.svg">
           <img alt="react" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg">
-          <img alt="firebase" src="https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg">
+          <!--          <img alt="firebase" src="https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg">-->
           <img alt="html5" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg">
           <img alt="css3" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg">
-          <img alt="figma" src="https://www.vectorlogo.zone/logos/figma/figma-ar21.svg">
+          <!--          <img alt="figma" src="https://www.vectorlogo.zone/logos/figma/figma-ar21.svg">-->
           <img alt="sass" src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg">
           <img alt="webpack" src="https://www.vectorlogo.zone/logos/js_webpack/js_webpack-ar21.svg">
           <img alt="parceljs" src="https://www.vectorlogo.zone/logos/parceljs/parceljs-ar21.svg">
-          <img alt="jetbrains" src="https://www.vectorlogo.zone/logos/jetbrains/jetbrains-ar21.svg">
-          <img alt="vs-code" src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg">
+          <!--          <img alt="jetbrains" src="https://www.vectorlogo.zone/logos/jetbrains/jetbrains-ar21.svg">-->
+          <!--          <img alt="vs-code" src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg">-->
           <img alt="mysql" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg">
-          <img alt="oracle" src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg">
+          <!--<img alt="dbeaver" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/DBeaver_logo.svg"
+               style="height: 60px">-->
+          <!--          <img alt="oracle" src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg">-->
           <img alt="redis" src="https://www.vectorlogo.zone/logos/redis/redis-ar21.svg">
           <img alt="mongodb" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg">
           <img alt="docker" src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg">
@@ -283,7 +302,7 @@
         <h2>CERTIFICATIONS</h2>
       </div>
     </div>
-    <div class="box scale">
+    <div class="box scale d-flex justify-content-center">
       <a href="https://www.credly.com/badges/ed8c95c7-841a-4697-8cf1-dfe6217ea1f9/public_url" target="_blank"><img
         alt="aws-saa" src="assets/aws-certified-solutions-architect-associate.png"></a>
     </div>
@@ -327,7 +346,7 @@
       <span class="text-muted">&copy; 2021 - present Pethum Jeewantha</span>
     </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex contact__icons">
       <li class="ms-4 fs-3"><a href="https://www.linkedin.com/in/pethum-jeewantha-7b70aa1b1" id="linkedin"
                                target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
       <li class="ms-4 fs-3"><a href="mailto:pethumjeewantha4@gmail.com" id="mail" target="_blank"><i
