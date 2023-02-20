@@ -2,6 +2,13 @@
 	"name": "pethum-jeewantha",
 	"type": "module",
 	"version": "2.0.0",
+	"description": "Personal Website",
+	"keywords": [
+		"Pethum",
+		"Jeewantha"
+	],
+	"license": "MIT",
+	"author": "Pethum Jeewantha <me@pethumjeewantha.com> (https://pethumjeewantha.com)",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
