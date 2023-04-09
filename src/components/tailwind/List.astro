@@ -1,0 +1,8 @@
+---
+const { items } = Astro.props;
+---
+
+<ul class="list-disc md:columns-5 columns-2 mx-6">
+    {items?.map((item: string) => <li>{item}</li>)}
+ </ul>
+ 
