@@ -17,6 +17,11 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"astro": "^2.0.14"
+		"@astrojs/tailwind": "^3.1.1",
+		"astro": "^2.0.14",
+		"daisyui": "^2.51.5"
+	},
+	"devDependencies": {
+		"@tailwindcss/typography": "^0.5.9"
 	}
 }
