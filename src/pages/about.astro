@@ -1,0 +1,194 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+import TimeLineElement from "../components/tailwind/TimeLine.astro";
+import List from "../components/tailwind/List.astro";
+---
+
+<BaseLayout
+	title="About | Pethum Jeewantha"
+	description="About Pethum Jeewantha"
+>
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/about.jpg"
+					alt="Pethum Jeewantha at work with a colleague"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						<strong>Pethum Jeewantha</strong> is a talented software
+						engineer who has a love for creativity and technology. He
+						is a talented learner and problem-solver and presently works
+						as a software engineer at <a href="https://bitzify.com"
+							>Bitzify (PVT) Ltd</a
+						>. Also, he is attempting to increase his skills in the
+						areas of project management and DevOps. Pethum is a
+						promising young talent who is certain to make big
+						contributions to the software development sector down
+						the road due to his strong academic background and
+						commitment to his art.
+						<br>
+						You can see my CV from <a href="/assets/pethum-jeewantha.pdf" target="_blank">here</a>.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Experience</h2>
+
+				<div class="time-line-container grid gap-4 mb-10">
+					<TimeLineElement
+						title="Associate Software Engineer"
+						subtitle="From 2022 at Bitzify (Pvt) Ltd"
+						desc="I created an Excel add-in that integrates with Acumatica as well as a payroll system that is integrated with IFS. Further working on eWMS integrated with IFS."
+					/>
+					<TimeLineElement
+						title="Software Engineer Trainee"
+						subtitle="From 2021 to 2022 at Institute of Java Software Engineering (IJSE)"
+					/>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Education</h2>
+
+				<div class="time-line-container grid gap-4 mb-10">
+					<TimeLineElement
+						title="BSc(Hons) in Computer Science"
+						subtitle="From 2022 at University of Kelaniya"
+					/>
+					<TimeLineElement
+						title="G. C. E. Advanced Level"
+						subtitle="From 2017 to 2020 in Physical Science Stream"
+					/>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Certifications</h2>
+				<div class="content">
+					<ul class="list-disc mx-6 mb-10 grid gap-2">
+						<li>
+							<a
+								href="https://www.credly.com/badges/5c335d20-2da7-4fa2-935d-f19676a3d017/public_url"
+								target="_blank"
+								>Certified Kubernetes Administrater</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.credly.com/badges/ed8c95c7-841a-4697-8cf1-dfe6217ea1f9/public_url"
+								target="_blank"
+								>Certified AWS Solution Artchitect Associate</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=F56B8772DEAC870239100CBC9D42FEBD4D198B6C657215AF477240DF20310EED"
+								target="_blank">Certified Associate Java SE 8 Programmer</a
+							>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<List
+						items={[
+							"Kubernetes",
+							"Docker",
+							"Spring Framework",
+							"AWS",
+							"Tomcat",
+							"Nodejs",
+							"Angular",
+							"React",
+							"ASP .NET",
+							"Webpack",
+							"ParcelJS",
+							"MySQL",
+							"PostgreSQL",
+							"MongoDB",
+							"Redis",
+							"Git"
+						]}
+					/>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

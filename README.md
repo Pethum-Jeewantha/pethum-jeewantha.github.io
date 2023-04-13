@@ -1,66 +1,30 @@
-# Portfolio Website
+# Astro Starter Kit: Portfolio
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+```
+npm create astro@latest -- --template portfolio
+```
 
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
 
-## About The Project
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-This is my portfolio website repository.
+![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
 
-## Getting Started
 
-This website is hosted at [github page](https://pethumjeewantha.com).
+## 🧞 Commands
 
-## License
+All commands are run from the root of the project, from a terminal:
 
-Copyright &copy; 2021 - present Pethum Jeewantha. All rights reserved.
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`      |
+| `npm run build`        | Build your production site to `./dist/`          |
+| `npm run preview`      | Preview your build locally, before deploying     |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro --help` | Get help using the Astro CLI                     |
 
-Licensed under the [MIT](LICENSE.txt) license.
-## Contact
+## 👀 Want to learn more?
 
-Pethum Jeewantha - [Twitter](https://twitter.com/JeewanthaPethum?s=08) - pethumjeewantha4@gmail.com
-
-[Project](https://github.com/Pethum-Jeewantha/personal-website.git)
-
-## Acknowledgements
-
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-
-[contributors-shield]: https://img.shields.io/github/contributors/Pethum-Jeewantha/personal-website.svg?style=for-the-badge
-
-[contributors-url]: https://github.com/Pethum-Jeewantha/personal-website/graphs/contributors
-
-[forks-shield]: https://img.shields.io/github/forks/Pethum-Jeewantha/personal-website.svg?style=for-the-badge
-
-[forks-url]: https://github.com/Pethum-Jeewantha/personal-website/network/members
-
-[stars-shield]: https://img.shields.io/github/stars/Pethum-Jeewantha/personal-website.svg?style=for-the-badge
-
-[stars-url]: https://github.com/Pethum-Jeewantha/personal-website/stargazers
-
-[license-shield]: https://img.shields.io/github/license/Pethum-Jeewantha/personal-website.svg?style=for-the-badge
-
-[license-url]: https://github.com/Pethum-Jeewantha/personal-website/blob/master/LICENSE.txt
-
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-
-[linkedin-url]: https://www.linkedin.com/in/pethum-jeewantha-7b70aa1b1
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
